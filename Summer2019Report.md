@@ -33,13 +33,13 @@ All five of these sensors are connected to a main computer on the lab bench thro
 
 Effluent quality data is logged directly with ProCoDa, a process control software developed by Dr. Weber-Shirk.  The method file for data collection is available [on Github](https://github.com/AguaClara/Prefabricated-Pilot-Plant/blob/master/Data/Method_Files/Plantita_2.pcm).  The code for this, written by Dr. Weber-Shirk, is very similar to that used in the lab to connect to the turbidimeters.  Each device is assigned an address in the network, and then each data input (for example, total particle count, or the UVA reading) is assigned a data address from that device.  ProCoDa constantly samples these and saves them into an excel datalog, which is then imported from that computer through google drive to the cloud.  [You can view the data in real time here!](https://drive.google.com/drive/folders/15Q-oahdi-_HOuTjkzV-ZeO8t-d6P-ldm?usp=sharing)
 
-This data will be used for two purposes.  
+This data will be used for two purposes.  The first is to further AguaClara research on floc blanket function and efficiency.  As described within the literature review, past research by graduate student Casey Garland showed that particle removal efficiency of the floc blanket was first order with respect to depth, but then eventually tapered off to a flat line with no further particle removal.  [This video]() shows one experiment that gave this result.  This information is part of the justification for the design floc blanket height.  However, current theories in particle interactions within floc blankets suggest that smaller particles are being preferentially removed from the floc blanket, while larger particles become more easily sheared off and escape.  Since turbidimeters are unable to measure turbidity from small particles well (since they reflect significantly less light than larger ones) it is possible that previous experiments did not capture this result well.  Thus, data collection on particle size distributions will provide a more accurate picture of the types of particles escaping the floc blanket.
 
-** Attach floc blanket video **
+If this theory is true, it suggests that increasing the height of the floc blanket will actually be beneficial, as smaller particle removal will increase.  Since these particles are very difficult to remove, even within the filter, this result would be very positive towards increasing the treatment capability of AguaClara plants of all scales.
 
 This graph, relating the effluent turbidity and the height of the floc blanket, shows a clear drop off at a height of x, after which increased levels of flocs no longer contribute to removing particles from the water.  This data has driven design decisions on the sedimentation tank.  However, due to the limitations of previous measuring devices, it is unclear what the size distributions is of the particles that are being removed by the floc blanket. The current floc model hypothesis predicts that within an up flow floc blanket, such as the blanket within the PF 300, smaller particles will have a greater opportunity to collide and bind with the suspended flocs and be removed, while collisions with larger particles will be more easily sheared off of the particles and escape.
 
-  <img src="https://github.com/AguaClara/Prefabricated-Pilot-Plant/blob/master/Floc_blanket_particle_streamlines.png?raw=true" height = 400>
+<img src="https://github.com/AguaClara/Prefabricated-Pilot-Plant/blob/master/Floc_blanket_particle_streamlines.png?raw=true" height = 400>
 
  **Figure 1:** The large floc is suspended in the floc blanket and has a point of stagnation that allows smaller primary particles to effectively collide if their approach is from the correct orientation, streamline on the right. However if the particle is too far off the side then a collision will not occur, left most streamline.
 
@@ -67,8 +67,12 @@ Previous teams designed and built the Enclosed Stack Rapid Sand Filter and trans
 
 ## Assembly
 
-The first task to connecting the filter was to find a way to divert the settled water to it's entrance tank. The sedimentation tank's effluent leaves through a 3 inch PVC pipe that then is diverted to the CWFT's rapid mix unit for treatment. A tee and two ball valves were installed on this line to allow the settled water to selectively be diverted either to the filter or to waste.
+The first task to connecting the filter was to find a way to divert the settled water to the filters entrance tank. The sedimentation tank's effluent leaves through a 3 inch PVC pipe that then is diverted to the CWFT's rapid mix unit for treatment. This technique allows us to run our experiments with the same water that the CWFP uses and also ensures that our experiments won't compromise the CWFP's treated water quality. A tee and two ball valves were installed on the sed tank's exit line to allow the settled water to be selectively diverted either to the filter or to waste.
 In addition to that change we took the opportunity to add a flow weir to the sedimentation tank. This allowed us to raise the water level inside of the sedimentation tank and ensure that the exit launder was fully submerged at all times with about an inch of water above it.
+
+<img src="https://github.com/AguaClara/Prefabricated-Pilot-Plant/blob/master/Images/Report/Filter_connection.jpg?raw=true" height = 600>
+
+**Figure 2.** The flow weir was made out of two 3 inch PVC elbows and can be seen in the top circle. The settled water flows down the main pipe and can be diverted either to the filter, to the left, or to waste, straight down.
 
 
 
