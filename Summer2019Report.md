@@ -27,11 +27,13 @@ Discuss what is already known about your research area based on both external wo
 
 # Project One: Sensors and Data Acquisition
 
-The first project for the summer is installing a number of sensors to collect data on the effluent from the PF 300.  Five sensors were installed: two Chemtrac PC6 particle sensors, one Chemtrac UV254 organics sensor, and two HF Scientific Turbidimeters.  One turbidimeter, one particle counter, and the organics sensor take samples from the effluent of the sed tank (known as settled water), and the other turbidimeter and particle counter take samples from the outlet to the filter box.
+The first project for the summer is installing a number of sensors to collect data on the effluent from the PF 300.  Five sensors were installed: two Chemtrac PC6 particle sensors, one Chemtrac UV254 organics sensor, and two HF Scientific Turbidimeters.  One turbidimeter, one particle counter, and the organics sensor take samples from the effluent of the sedimentation tank (known as settled water), and the other turbidimeter and particle counter take samples from the outlet to the filter box.
 
 All five of these sensors are connected to a main computer on the lab bench through Modbus RS485.  Modbus allows connection to up to 255 different sensors, each with a differing address.  Therefore, the team was able to wire each sensor together in a "daisy chain," with one single wire going into from the HydroAct through an adapter and connected directly into the computer.  
 
-Effluent quality data is logged directly with ProCoDa, a process control software developed by Dr. Weber-Shirk.  The method file for data collection is available in our [Github repository]()
+Effluent quality data is logged directly with ProCoDa, a process control software developed by Dr. Weber-Shirk.  The method file for data collection is available [on Github](https://github.com/AguaClara/Prefabricated-Pilot-Plant/blob/master/Data/Method_Files/Plantita_2.pcm).  The code for this, written by Dr. Weber-Shirk, is very similar to that used in the lab to connect to the turbidimeters.  Each device is assigned an address in the network, and then each data input (for example, total particle count, or the UVA reading) is assigned a data address from that device.  ProCoDa constantly samples these and saves them into an excel datalog, which is then imported from that computer through google drive to the cloud.  [You can view the data in real time here!](https://drive.google.com/drive/folders/15Q-oahdi-_HOuTjkzV-ZeO8t-d6P-ldm?usp=sharing)
+
+This data will be used for two purposes.  
 
 ** Attach floc blanket video **
 
