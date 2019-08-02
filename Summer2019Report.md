@@ -21,7 +21,14 @@ The main objectives for the summer were:
 * Redesign of PF 300 components to improve operation quality and make construction easier
 
 ## Literature Review and Previous Work
-Discuss what is already known about your research area based on both external work and that of past AguaClara Teams. Connect your objectives with what is already known and explain what additional contribution you intend to make. Make sure to add APA formatted in-text citations. If you mention the author(s) in your sentence, you can simply give the year of publication. [(Logan et. al. 1987)](http://www.jstor.org/stable/pdf/25043431.pdf?acceptTC=true)
+
+The first PF 300 system was designed during Spring 2016 and built during Summer 2016 by a group of students and engineers on Cornell's campus.  Future teams tested the system and worked to streamline the fabrication process, after which the first system was sent of Honduras for testing in the field.  In 2017 another system was fabricated at Cornell and tested with the full treatment process, which continued into Spring 2018.  
+
+In Fall 2018, there was no subteam specifically focused on research with the PF300.  Instead, Meng student Zoe Maisel focused her thesis on developing the PF300 system for usage in the United States.  Part of her project was moving the PF300 system from the DeFrees Hydraulic Lab at Cornell to the Cornell Water Treatment Plant.  There it was connected to the typical influent line, allowing for parallel testing of both systems for comparison.  She also wrote a detailed thesis comparing the PF300 system with typical water treatment systems within the US [(Maisel, 2018)](https://github.com/AguaClara/Prefabricated-Pilot-Plant/blob/master/Lit_Review/Maisel-High_Rate_Processes.pdf).
+
+As part of the CEE 3520 course at Cornell, a few student groups developed design projects around the PF 300 which formed the basis for the design work this summer.  Inspiration for the plastic honeycomb piece for plate settlers came from "TuBe Or Not TuBe: A Comparison of Alternative Plate and Tube Settler Geometries" [(Connely et. al. 2019)](https://github.com/AguaClara/CEE3520/blob/master/Previous%20Final%20Projects/2019S/HummusHummus_Final_Report.md).  The design idea and code was sourced from the "Flocculatorita" project [(Blahut et. al. 2019)](https://github.com/AguaClara/CEE3520/blob/master/Previous%20Final%20Projects/2019S/Flocculatorita.md).  And the redesign of the sedimentation tank was based on work done in "Straight singular sedimentation tank for a modular plant" [(Guardado et. al. 2019)](https://github.com/AguaClara/CEE3520/blob/master/Previous%20Final%20Projects/2019S/LaMeraChimba_4L_per_S_sed_tank.md).  
+
+Research that inspired the current questions on particle removal was done by Casey Garland.
 
 ## Methods
 
@@ -34,6 +41,8 @@ All five of these sensors are connected to a main computer on the lab bench thro
 Effluent quality data is logged directly with ProCoDa, a process control software developed by Dr. Weber-Shirk.  The method file for data collection is available [on Github](https://github.com/AguaClara/Prefabricated-Pilot-Plant/blob/master/Data/Method_Files/Plantita_2.pcm).  The code for this, written by Dr. Weber-Shirk, is very similar to that used in the lab to connect to the turbidimeters.  Each device is assigned an address in the network, and then each data input (for example, total particle count, or the UVA reading) is assigned a data address from that device.  ProCoDa constantly samples these and saves them into an excel datalog, which is then imported from that computer through google drive to the cloud.  [You can view the data in real time here!](https://drive.google.com/drive/folders/15Q-oahdi-_HOuTjkzV-ZeO8t-d6P-ldm?usp=sharing)
 
 This data will be used for two purposes.  The first is to further AguaClara research on floc blanket function and efficiency.  As described within the literature review, past research by graduate student Casey Garland showed that particle removal efficiency of the floc blanket was first order with respect to depth, but then eventually tapered off to a flat line with no further particle removal.  [This video](https://github.com/AguaClara/Prefabricated-Pilot-Plant/blob/master/Lit_Review/sedimentation.mp4) shows one experiment that gave this result.  This information is part of the justification for the design floc blanket height.  However, current theories in particle interactions within floc blankets suggest that smaller particles are being preferentially removed from the floc blanket, while larger particles become more easily sheared off and escape.  In an upflow system like the floc blanket, there is a stagnation point under suspended particles.  If a smaller particle follows the streamline and hits this point, it can easily collide and stick to this particle.  However, if a particle follows another streamline, the boundary layer around the particle prevents collisions.  This rapid flow around the particles also can shear larger particles off and allow them to escape.  This is shown in Figure 1 below.  
+
+<img src ="https://github.com/AguaClara/Prefabricated-Pilot-Plant/blob/master/Images/Report/Floc_blanket_particle_streamlines.png?raw=true" >
 
  **Figure 1:** The large floc is suspended in the floc blanket and has a point of stagnation that allows smaller primary particles to effectively collide if their approach is from the correct orientation, streamline on the right. However if the particle is too far off the side then a collision will not occur, left most streamline.
 
@@ -52,9 +61,6 @@ The team considered a number of possible sensors to detect height as a function 
 Research is ongoing into the best method to measure this.
 
 The second purpose for data collection is to provide water quality data over long term usage of the PF 300, which can justify the efficacy of the system, and provide direct comparison with other conventional water treatment systems like the Cornell Water Filtration Plant.  While PF 300 systems are currently only utilized in Honduras, there is lots of evidence that a similar system would be very useful in smaller communities in the United States, or other areas.  One such example is Native American reservations, which have had many issues with water quality and supply in the past.  Team members have talked with officials from the US Indian Public Health Service and are beginning to explore the need for these systems there.
-
-
-### Other Changes to the PF 300 System
 
 # Project Two: Filter Assembly
 
@@ -103,13 +109,6 @@ Escape of sand through the influent pipes was observed many times during operati
 The team also observed significant amounts of sand within the exit tank, and even some in the turbidimeter reading off the exit tank. This means that sand is escaping the inner tank to effluent, which the slotted outlet pipes are designed to prevent.  This suggests that some of all of the slotted outlet pipes were designed incorrectly, and that sand can escape through these pipes.  
 
 While a few different possibilities were considered, this shows a clear failure in the filter, and means that the filter must be either be repaired or remade completely.  Work is ongoing, but the current plan is to assemble a new filter, using the design of "gravity exclusion zones" by [Stars FINE](https://github.com/AguaClara/StaRSFine) in Spring 2019.
-
-
-
-
-
-
-
 
 # Operation Manual
 
