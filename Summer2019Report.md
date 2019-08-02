@@ -33,30 +33,25 @@ All five of these sensors are connected to a main computer on the lab bench thro
 
 Effluent quality data is logged directly with ProCoDa, a process control software developed by Dr. Weber-Shirk.  The method file for data collection is available [on Github](https://github.com/AguaClara/Prefabricated-Pilot-Plant/blob/master/Data/Method_Files/Plantita_2.pcm).  The code for this, written by Dr. Weber-Shirk, is very similar to that used in the lab to connect to the turbidimeters.  Each device is assigned an address in the network, and then each data input (for example, total particle count, or the UVA reading) is assigned a data address from that device.  ProCoDa constantly samples these and saves them into an excel datalog, which is then imported from that computer through google drive to the cloud.  [You can view the data in real time here!](https://drive.google.com/drive/folders/15Q-oahdi-_HOuTjkzV-ZeO8t-d6P-ldm?usp=sharing)
 
-This data will be used for two purposes.  The first is to further AguaClara research on floc blanket function and efficiency.  As described within the literature review, past research by graduate student Casey Garland showed that particle removal efficiency of the floc blanket was first order with respect to depth, but then eventually tapered off to a flat line with no further particle removal.  [This video]() shows one experiment that gave this result.  This information is part of the justification for the design floc blanket height.  However, current theories in particle interactions within floc blankets suggest that smaller particles are being preferentially removed from the floc blanket, while larger particles become more easily sheared off and escape.  Since turbidimeters are unable to measure turbidity from small particles well (since they reflect significantly less light than larger ones) it is possible that previous experiments did not capture this result well.  Thus, data collection on particle size distributions will provide a more accurate picture of the types of particles escaping the floc blanket.
-
-If this theory is true, it suggests that increasing the height of the floc blanket will actually be beneficial, as smaller particle removal will increase.  Since these particles are very difficult to remove, even within the filter, this result would be very positive towards increasing the treatment capability of AguaClara plants of all scales.
-
-This graph, relating the effluent turbidity and the height of the floc blanket, shows a clear drop off at a height of x, after which increased levels of flocs no longer contribute to removing particles from the water.  This data has driven design decisions on the sedimentation tank.  However, due to the limitations of previous measuring devices, it is unclear what the size distributions is of the particles that are being removed by the floc blanket. The current floc model hypothesis predicts that within an up flow floc blanket, such as the blanket within the PF 300, smaller particles will have a greater opportunity to collide and bind with the suspended flocs and be removed, while collisions with larger particles will be more easily sheared off of the particles and escape.
-
-<img src="https://github.com/AguaClara/Prefabricated-Pilot-Plant/blob/master/Floc_blanket_particle_streamlines.png?raw=true" height = 400>
+This data will be used for two purposes.  The first is to further AguaClara research on floc blanket function and efficiency.  As described within the literature review, past research by graduate student Casey Garland showed that particle removal efficiency of the floc blanket was first order with respect to depth, but then eventually tapered off to a flat line with no further particle removal.  [This video](https://github.com/AguaClara/Prefabricated-Pilot-Plant/blob/master/Lit_Review/sedimentation.mp4) shows one experiment that gave this result.  This information is part of the justification for the design floc blanket height.  However, current theories in particle interactions within floc blankets suggest that smaller particles are being preferentially removed from the floc blanket, while larger particles become more easily sheared off and escape.  In an upflow system like the floc blanket, there is a stagnation point under suspended particles.  If a smaller particle follows the streamline and hits this point, it can easily collide and stick to this particle.  However, if a particle follows another streamline, the boundary layer around the particle prevents collisions.  This rapid flow around the particles also can shear larger particles off and allow them to escape.  This is shown in Figure 1 below.  
 
  **Figure 1:** The large floc is suspended in the floc blanket and has a point of stagnation that allows smaller primary particles to effectively collide if their approach is from the correct orientation, streamline on the right. However if the particle is too far off the side then a collision will not occur, left most streamline.
 
-In order to gather more evidence for this theory, we will utilize the particle counters to characterize the size of particles leaving through the effluent, and thus see if larger particles are preferentially escaping.  The organics sensor will also collect data on humic acid and other organics escaping to further support the hypothesis.  Once the system is set up, the PF 300 will be continuously run in line with the full water treatment plant to collect continuous data.
+Since turbidimeters are unable to measure turbidity from small particles well (since they reflect significantly less light than larger ones) it is possible that previous experiments did not capture this result well.  Thus, data collection on particle size distributions will provide a more accurate picture of the types of particles escaping the floc blanket.
 
-The other important parameter to collect from this system is the height of the floc blanket.  Unfortunately, since the PF 300 system is not transparent, there is no way to visually inspect this.  The only directly visible measure is through the floc hopper, where flocs can be seen escaping.  This only occurs when the floc blanket begins to grow above the height of the floc hopper (its maximum).
+If this theory is true, it suggests that increasing the height of the floc blanket will actually be beneficial, as smaller particle removal will increase.  Since these particles are very difficult to remove, even within the filter, this result would be very positive towards increasing the treatment capability of AguaClara plants of all scales.
+
+The other important parameter to collect for this experiment is the height of the floc blanket.  Unfortunately, since the PF 300 system is not transparent, there is no way to visually inspect this.  The only directly visible measure is through the floc hopper, where flocs can be seen escaping.  This only occurs when the floc blanket begins to grow above the height of the floc hopper (the maximum height).
 
 The team considered a number of possible sensors to detect height as a function of time, including installing electrical sensors inside, taking constant measurements from the sampling ports on the side of the plant, and taking measurements by lowering a probe in from the top of the plant.  All of these possibilities were eventually scrapped, and the following methods were determined to be the most simple and effective:
 
-1. When the plant begins operation after being fully drained, the floc blanket height can be assumed to be 0.  Once significant levels of flocs are observed leaving the floc hopper, the floc blanket can be assumed to have reached it's maximum height.  In between, the relationship between floc blanket height can be approximated as linear, following the equation below:
-$$ h(t) =\frac{H_m}{T_m} t $$
-where  $H_m$ is the maximum height of the floc blanket (in the current design, X) and $t_m$ is the time until the maximum height is reached.  While this is just a first assumption, further tests may be taken to determine if there is a different relationship between time and floc blanket height.
-2. Throughout operation, data will be collected on influent turbidity (from the inlet pipe to the CUWTP) and effluent turbidity (from the turbidimeter mounted on the sensor table).  By taking the difference between these values, an estimation of the mass input rate into the system can be taken (which is proportional to floc blanket height), given that mass is conserved.  This will provide another parameter for the model.  Futher work is needed to determine the exact relatio between mass loading rate and floc blanket height.
+1. Experiments with a typical rangefinder, pictured below, show that it can read the height from the top of the floc blanket.  Thus, by continuously running a rangefinder affixed to the top of the plant, and shining the laser between the plate settler, we can measure the distance from the rangefinder to the top of the floc blanket, and using simple geometry we can convert this into the height of the floc blanket.  The current rangefinder in use works but does not connect to a computer, so measurements must be made manually.  Note that the rangefinder doesn't work if water is too turbid that the particles reflect the laser, but the team found that typically within ~30 minutes after startup turbidity lowered enough to make accurate measurements.
 
-The second purpose of data acquistion within this system is to collect information to justify the usage of PF 300 systems over conventional water treatment systems, particularly in the United States.  The primary motivation of the AguaClara project is to provide safe drinking water on tap to as many people as possible.  As outlined in (cite Zoe's thesis), there is significant justification for the usage of PF 300 systems over current water treatment technologies in the United States, particularly in smaller communities without funding or access to large scale built infrastructure.  
+2. When the plant begins operation after being fully drained, the floc blanket height can be assumed to be 0.  Once significant levels of flocs are observed leaving the floc hopper, the floc blanket can be assumed to have reached it's maximum height.  In between, the relationship between floc blanket height can be approximated as linear.  By measuring the time flocs begin to leave the floc hopper, the slope of this line can be determined.
 
+Research is ongoing into the best method to measure this.
 
+The second purpose for data collection is to provide water quality data over long term usage of the PF 300, which can justify the efficacy of the system, and provide direct comparison with other conventional water treatment systems like the Cornell Water Filtration Plant.  While PF 300 systems are currently only utilized in Honduras, there is lots of evidence that a similar system would be very useful in smaller communities in the United States, or other areas.  One such example is Native American reservations, which have had many issues with water quality and supply in the past.  Team members have talked with officials from the US Indian Public Health Service and are beginning to explore the need for these systems there.
 
 
 ### Other Changes to the PF 300 System
@@ -74,13 +69,80 @@ In addition to that change we took the opportunity to add a flow weir to the sed
 
 **Figure 2.** The flow weir was made out of two 3 inch PVC elbows and can be seen in the top circle. The settled water flows down the main pipe and can be diverted either to the filter, to the left, or to waste, straight down.
 
+As can see in figure 2, when the ball valve in the vertical pipe is closed and the valve in the line feeding the filter is opened, settled water will go through the filter and be treated further.
 
+## Filter Entrance Tank
 
+Settled water from the sedimentation tank first arrives to the entrance tank of the filter, right most tank in figure 3.
 
+<img src="https://github.com/AguaClara/Prefabricated-Pilot-Plant/blob/master/Images/Report/Filter_setup.jpg?raw=true" >
+
+**Figure 3.** The three main compartments of the filter are the entrance tank, sand filter body, and effluent tank.
+
+Once the settled water enters the tank, the flow gets divided into four separate PVC pipes which feed the filter at four different positions. The distribution of flow can be seen in figure 4. Additionally, the entrance tank has 16.5 cm pipe stubs on three of the four pipes leading to the filter. This set up allows the entrance tank to preform during filtration and also during backwash. During filtration settled water needs to go through all of the pipes. Therefore the water level in the entrance tank needs to be high enough to allow flow into the pipe stubs. However, during backwash the flow needs to go through the larger diameter pipe, labeled in red in figure 4. This pipe attaches at the lowest point in the filter tank and t
+
+<img src ="https://github.com/AguaClara/Prefabricated-Pilot-Plant/blob/master/Images/Report/Entrance_pipes.jpg?raw=true" >
 
 # Project Three: System Redesigns
 
-
 ## Flocculator
 
-## Sedimentation
+## Sedimentation tank
+
+## Filter
+
+This summer was the first time a EStars filter had ever been fully assembled and tested in a treatment process.  As with any complicated system, there were numerous problems that come up, and further design and testing is needed before this system can be implemented in the field.  The major problem identified with this system was the escape of sand through influent and influent pipes.
+
+Escape of sand through the influent pipes was observed many times during operation, often due to errors in running the system.  The filter is designed such that sand should never escape the inner tank, as the upflow velocity should be too low to lift the particles all the way out the siphon system.  The following processes showed loss of sand (either through the siphon to effluent, or into the influent pipes):
+
+* Running backwash without first opening the effluent line.  Backwash is a very fine balance of pressures, and if one side is over or underpressurized it will not work properly.  Thus it is very important that whenever backwash is run the effluent line is open throughout the entire process.
+* Closing the backwash value quickly.  When backwash is running, water is flowing through the siphon very quickly due to the negative pressure.  If you close the valve and stop this process too quickly, it can "shock" the system and cause water to flow backwards through the pipes to return to the static head.  When ending backwash you must close this valve very slowly and gradually, at roughly 1 turn every 10 seconds.
+* Opening flow into the filter without stopping flow to effluent.  There are two valves at the junction after settled water, one controls flow to the drain, and one controls flow into the entrance tank of the filter.  Typical operation is to open flow to the filter first then stop flow to drain, to prevent flooding.  However is the influent tank is left full of water, this water will flow backwards to lower head when the valve is open, which can pull sand from the inner tank.  Thus, whenever you reconnect the filter you must first close the valve to drain, allow water to rise to about the level in the entrance tank, then open the valve to the entrance tank.  
+
+The team also observed significant amounts of sand within the exit tank, and even some in the turbidimeter reading off the exit tank. This means that sand is escaping the inner tank to effluent, which the slotted outlet pipes are designed to prevent.  This suggests that some of all of the slotted outlet pipes were designed incorrectly, and that sand can escape through these pipes.  
+
+While a few different possibilities were considered, this shows a clear failure in the filter, and means that the filter must be either be repaired or remade completely.  Work is ongoing, but the current plan is to assemble a new filter, using the design of "gravity exclusion zones" by [Stars FINE](https://github.com/AguaClara/StaRSFine) in Spring 2019.
+
+
+
+
+
+
+
+
+# Operation Manual
+
+To turn the PF 300 on and begin collecting data:
+
+1. Ensure all valves are open and flow is not blocked anywhere
+2. Turn the main pump switch from OFF to HAND to begin flow within the plant
+3. Turn on the peristaltic pump on the floc hopper and ensure the valve coming off the floc hopper is opened
+4. Turn on the HydroAct and both turbidimeters by plugging them in
+5. Turn on the main computer on the lab bench and log in on the generic AguaClara account, en-ce-ac
+6. Open ProCoDa and check that the "Plantita_2" method file is being read
+7. Data will automatically be collected and saved by ProCoDa, and uploaded into the cloud by Google Drive
+
+To pressurize the filter (necessary whenever there is air within the inner tank, such as after removing the lid for repairs):
+
+1. Open the valve on top of the filter to allow air to escape during process
+2. Close the outlet valve to ensure no flow is leaving the filter
+3. Water will begin to flood and raise the level within the influent tank.  Wait until water comes out of the top valve of the influent tank, then quickly close the top valve and open the effluent.  
+4. Sometimes due to the flow restrictions by the sand bed, water level will rapidly rise in the entrance tank but will not raise in the inner tank for a while.  In this case open the valve off the effluent from the sedimentation tank partially to prevent the entrance tank from overflowing, and wait until water leaves the top valve of the inner tank
+5. When you open the effluent you should hear a gurgling sound and observe flow being pulled into the effluent pipe.  This means the inner tank is pressurized and filter is operating correctly
+
+To run backwash in the filter:
+
+1. Backwash should be run whenever headloss in the entrance tank causes water level to rise significantly, typically daily.  Whenever you change the sand within the tank, you should also run backwash first to remove any particles that may have built up
+2. Ensure inner tank is pressurized and there isn't air inside
+3. Open the red backwash valve.  You should hear water being pulled through this pipe to the drain
+4. Ensure that water level in the influent tank drop to below the pipe stubs on the entrances to the other inlets.  When backwash is operating fully, water should only be flowing from the backwash line
+5. After backwash is complete, **slowly** close the backwash valve.  Once the valve is completely closed backwash should end and filter operation should resume as normal.
+
+To flush pipes (cleaning sand from within):
+
+1. Insert pipe plugs on all pipes except backwash line
+2. Start backwash cycle as normal.  Run with just backwash line for 1-2 minutes
+3. Open plug for lowest influent line (leftmost pipe).  Plug backwash line
+4. If the water level is too low (just above the pipe stub) air will also be sucked in through the line.  To prevent this, partially block the pipe stub and allow water level to raise ~6 inches above the pipe stub entrance.  We used our fingers to block this, although this is not recommended as the suction is very strong.  
+5. Swap the plugs and repeat this process for the other two pipes.  Whenever you switch flows ensure water level is high enough that air doesn't enter the pipes
+6. Once you have ended this process 
