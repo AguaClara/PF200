@@ -79,9 +79,10 @@ Settled water from the sedimentation tank first arrives to the entrance tank of 
 
 **Figure 3.** The three main compartments of the filter are the entrance tank, sand filter body, and effluent tank.
 
-Once the settled water enters the tank, the flow gets divided into four separate PVC pipes which feed the filter at four different positions. The distribution of flow can be seen in figure 4. Additionally, the entrance tank has 16.5 cm pipe stubs on three of the four pipes leading to the filter. This set up allows the entrance tank to preform during filtration and also during backwash. During filtration settled water needs to go through all of the pipes. Therefore the water level in the entrance tank needs to be high enough to allow flow into the pipe stubs. However, during backwash the flow needs to go through the larger diameter pipe, labeled in red in figure 4. This pipe attaches at the lowest point in the filter tank and t
+Once the settled water enters the tank, the flow gets divided into four separate PVC pipes which feed the filter at four different elevations. The distribution of flow can be seen in figure 4. Additionally, the entrance tank has 16.5 cm pipe stubs on three of the four pipes leading to the filter. This allows the entrance tank to function properly during filtration and also during backwash. During filtration settled water needs to go through all of the pipes, therefore the water level in the entrance tank needs to be high enough to allow flow into the pipe stubs. However, during backwash the flow needs to go through the larger diameter pipe, labeled in red in figure 4. This pipe attaches at the lowest point in the filter tank and because of that is responsible for fluidizing all of the sand in the tank during the backwash process. The pipe stubs ensures us that during backwash all of the flow goes through the bottom most pipe.
 
 <img src ="https://github.com/AguaClara/Prefabricated-Pilot-Plant/blob/master/Images/Report/Entrance_pipes.jpg?raw=true" >
+
 
 # Project Three: System Redesigns
 
@@ -142,7 +143,7 @@ To flush pipes (cleaning sand from within):
 
 1. Insert pipe plugs on all pipes except backwash line
 2. Start backwash cycle as normal.  Run with just backwash line for 1-2 minutes
-3. Open plug for lowest influent line (leftmost pipe).  Plug backwash line
+3. Open plug for lowest influent line (leftmost pipe).  Plug backwash line and allow water level to rise
 4. If the water level is too low (just above the pipe stub) air will also be sucked in through the line.  To prevent this, partially block the pipe stub and allow water level to raise ~6 inches above the pipe stub entrance.  We used our fingers to block this, although this is not recommended as the suction is very strong.  
 5. Swap the plugs and repeat this process for the other two pipes.  Whenever you switch flows ensure water level is high enough that air doesn't enter the pipes
-6. Once you have ended this process 
+6. Once you have flushed all pipes break backwash and remove all plugs.  If sand was removed from the pipe the sand level should be observably higher
