@@ -11,8 +11,11 @@ Working on optimizing and redesigning the PF300 Plant.
 **Summer 2019 Team:**
 
 Marcin Sawczuk mas874@cornell.edu
+
 Kevin Sarmiento ks2255@cornell.edu
+
 Ian Cullings idc25@cornell.edu
+
 Yitzy Rosenberg yyr2@cornell.edu
 
 [Symposium Presentation](https://docs.google.com/presentation/d/14-7EX47XN8-9KOKcPPQAOfRzo7gDOhDvY8mLLPdoe-Y/edit#slide=id.g34e26895c8_3_0)
