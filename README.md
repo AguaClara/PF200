@@ -5,10 +5,10 @@ Working on optimizing and redesigning the PF300 Plant.
 
 [OnShape](https://cad.onshape.com/documents/c2d1f86405270e814e117305/w/5a99281e258edb48b9d633f5/e/6bae3d77db5722cca1e4684c)
 
-Fall 2019 Team:
+**Fall 2019 Team:**
 [Mid-semester Symposium Presentation](https://docs.google.com/presentation/d/1beXxfFk0Zb6vNhiRZd7WTKsvpil8FLFxB8vfp_9dHnY/edit?usp=sharing)
 
-Summer 2019 Team:
+**Summer 2019 Team:**
 
 Marcin Sawczuk mas874@cornell.edu
 Kevin Sarmiento ks2255@cornell.edu
