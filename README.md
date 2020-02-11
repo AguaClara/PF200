@@ -5,6 +5,12 @@ Working on optimizing and redesigning the PF300 Plant.
 
 [OnShape](https://cad.onshape.com/documents/c2d1f86405270e814e117305/w/5a99281e258edb48b9d633f5/e/6bae3d77db5722cca1e4684c)
 
+**Spring 2020 Team**
+Whitney Denison wwd23@cornell.edu
+Ashley Zeng az342@cornell.edu
+Sandra Cangelosi sc2749@cornell.edu
+
+
 **Fall 2019 Team:**
 [Mid-semester Symposium Presentation](https://docs.google.com/presentation/d/1beXxfFk0Zb6vNhiRZd7WTKsvpil8FLFxB8vfp_9dHnY/edit?usp=sharing)
 
