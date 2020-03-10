@@ -7,7 +7,9 @@ Working on optimizing and redesigning the PF300 Plant.
 
 **Spring 2020 Team**
 Whitney Denison wwd23@cornell.edu
+
 Ashley Zeng az342@cornell.edu
+
 Sandra Cangelosi sc2749@cornell.edu
 
 
