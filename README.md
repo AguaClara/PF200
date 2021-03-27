@@ -5,6 +5,16 @@ Working on optimizing and redesigning the PF300 Plant.
 
 [OnShape](https://cad.onshape.com/documents/c2d1f86405270e814e117305/w/5a99281e258edb48b9d633f5/e/6bae3d77db5722cca1e4684c)
 
+**Spring 2021 Team**
+
+Sandra Cangelosi sc2749@cornell.edu
+
+Son-Jay Lake svl24@cornell.edu
+
+Melissa Louie ml897@cornell.edu
+
+Lynn Shin ms3244@cornell.edu
+
 **Spring 2020 Team**
 
 Whitney Denison wwd23@cornell.edu
