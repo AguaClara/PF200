@@ -5,6 +5,14 @@ Working on optimizing and redesigning the PF300 Plant.
 
 [OnShape](https://cad.onshape.com/documents/c2d1f86405270e814e117305/w/5a99281e258edb48b9d633f5/e/6bae3d77db5722cca1e4684c)
 
+**Summer 2022 Team**
+
+Isabel Crovella isc25@cornell.edu
+
+Sarah Bae ssb238@cornell.edu
+
+[Summer 2022 Report](https://github.com/AguaClara/PF200/blob/5bb9a7f38fa5151b12aef5d702b937e5a5cea816/PF200_Summer_2022_Final_Draft.ipynb)
+
 **Spring 2021 Team**
 
 Sandra Cangelosi sc2749@cornell.edu
