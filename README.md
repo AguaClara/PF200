@@ -5,16 +5,6 @@ Working on optimizing and redesigning the PF300 Plant.
 
 [OnShape](https://cad.onshape.com/documents/c2d1f86405270e814e117305/w/5a99281e258edb48b9d633f5/e/6bae3d77db5722cca1e4684c)
 
-**Fall 2022 Team**
-
-Sarah Bae ssb238@cornell.edu
-
-Isabel Crovella isc25@cornell.edu
-
-Dennis Wu djw323@cornell.edu
-
-[Fall 2022 Report]()
-
 **Summer 2022 Team**
 
 Isabel Crovella isc25@cornell.edu
