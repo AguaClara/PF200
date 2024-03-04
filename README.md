@@ -13,6 +13,8 @@ Ari Schor aes392@cornell.edu
 
 Anjali Asthagiri aa2549@cornell.edu
 
+Claire Wang cyw34@cornell.edu
+
 **Fall 2023 Team**
 
 Sarah Bae ssb238@cornell.edu
